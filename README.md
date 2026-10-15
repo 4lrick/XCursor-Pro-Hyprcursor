@@ -12,14 +12,17 @@ or
 - Run `hyprcursor-util --create XCursor-Pro-[Dark|Light|Red]-Hyprcursor`
 - Copy the directory to `~/.local/share/icons` or `~/.icons` folder
 
- ## Usage
+## Usage
 
-- Add the `HYPRCURSOR_THEME` environment variable to your hyprland config
+- Add the `HYPRCURSOR_THEME` environment variable to your `~/.config/hypr/hyprland.lua`:
+
+```lua
+hl.env("HYPRCURSOR_THEME", "XCursor-Pro-[Dark|Light|Red]-Hyprcursor")
 ```
-env = HYPRCURSOR_THEME,XCursor-Pro-[Dark|Light|Red]-Hyprcursor
-```
-- Set the cursor for the current session
-```
+
+- Set the cursor for the current session:
+
+```bash
 hyprctl setcursor XCursor-Pro-[Dark|Light|Red]-Hyprcursor [SIZE]
 ```
 
